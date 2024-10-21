@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(red,rgba(0,0,0,.8));
+}
+.container{
+    width:40%;
+}
+.results{
+    margin-bottom: 10px;
+    background-color:azure;
+    padding:30px 30px 30px;
+    border-radius: 10px 10px 3px 3px;
+    border-bottom: 10px solid rgb(26, 30, 46);
+}
+.results h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+}
+.display{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.display input{
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+.display button{
+    cursor: pointer;
+    border: none;
+}
+.display button i{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    transition: all .3s;
+}
+
+.errorActive{
+    color: red;
+    display: none;
+}
+
+/*-----------------------------*/
+
+.settings{
+    background-color:azure;
+    padding:30px 30px 30px;
+    border-radius: 5px;
+}
+.settings h2{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.passwordlength label{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 19px;
+}
+.passwordlength .lengthmain{
+    margin-top: 5px;
+}
+
+.lengthmain #number{
+    outline: none;
+    width: 60px;
+    height: 30px;
+    padding: 15px 0px 15px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:2px solid black;
+    transition: all .3s;
+}
+.lengthmain #number:focus{
+    border: 2px solid red;
+}
+.lengthmain #number:hover{
+    border: 2px solid red;
+}
+.overAll{
+    width: 100%;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.passwordlength{
+    width: 70%;
+}
+.lengthmain #lengthrange{
+    width: 60%;
+    accent-color: red;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+}
+.checkbox{
+    padding-top: 30px;
+}
+.checkbox .inputbox{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+.checkbox .inputbox input{
+    accent-color: red;
+    color: #fff;
+    transform: scale(1.9);  
+}
+.checkbox .inputbox label{
+    margin-left: 7px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+form .submit{
+    text-align: center;
+    margin:20px;
+}
+form .submit input{
+    padding:10px 15px;
+    background-color: red;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width:430px){
+    .container{
+        width: 95%;
+    }
+    .results{
+        padding:30px 10px 30px;
+        border-radius:5px;
+        border:none;  
+    }
+    .results h1{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .display input{
+        font-size: 18px;
+    }
+    .settings{
+        padding:30px 10px 30px;
+        border-radius: 5px;
+    }
+    .settings h2{
+        text-transform: capitalize;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .passwordlength label{
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+
