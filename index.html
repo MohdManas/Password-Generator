@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Javascript/script.js" defer></script>
+    <title>PASSWORD-GENERATOR</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form">
+            <div class="results">
+                <h1>password generator</h1>
+
+                <div class="display">
+                    <input type="text" id="results">
+                    <button id="copyBtn"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <span class="errorActive">Password is not here</span>
+            </div>
+
+            <div class="settings">
+                <h2>customize your password</h2>
+
+                <div class="overAll">
+                <div class="passwordlength">
+                    <label for="number">password length</label>
+                    <div class="lengthmain">
+                        <input type="number" id="number" min="5" max="40" value="6">
+                        <input type="range" id="lengthrange" value="6" max="40">
+                    </div>
+                </div>
+                
+                <div class="checkbox">
+                    <div class="inputbox">
+                        <input type="checkbox" id="upper" checked>
+                        <label for="upper">uppercase</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="checkbox" id="lower">
+                        <label for="lower">lowercase</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">numbers</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">symbols</label>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="submit">
+            <input type="submit" value="generate password" id="passBtn">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

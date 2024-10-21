@@ -1,0 +1,24 @@
+{
+  "name": "Password-Generator",
+  "version": "1.0.0",
+  "description": "The Password Generator project is a web application that allows users to generate secure and random passwords for various online accounts. It's built using a combination of HTML, CSS, and JavaScript to provide an intuitive and user-friendly interface. The project is hosted on GitHub to make it accessible to users and to showcase your coding abilities.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamvijay98/Password-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamvijay98/Password-Generator/issues"
+  },
+  "homepage": "https://github.com/iamvijay98/Password-Generator#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
